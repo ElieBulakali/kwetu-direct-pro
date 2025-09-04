@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="160" viewBox="0 0 512 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KWETU DIRECT - Courier Logo</title>
+  <desc id="desc">A stylized courier envelope with motion lines and a rider helmet silhouette</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Motion lines -->
+  <g fill="none" stroke="#ef4444" stroke-width="6" stroke-linecap="round" opacity="0.9">
+    <path d="M20 70 H120"/>
+    <path d="M20 90 H100"/>
+    <path d="M20 110 H80"/>
+  </g>
+
+  <!-- Envelope -->
+  <g transform="translate(120,40)" filter="url(#shadow)">
+    <rect x="0" y="0" rx="12" ry="12" width="160" height="100" fill="url(#grad)" />
+    <path d="M0 0 L80 55 L160 0" fill="rgba(255,255,255,0.65)"/>
+    <path d="M0 100 L80 45 L160 100" fill="rgba(255,255,255,0.35)"/>
+    <!-- Flash -->
+    <path d="M92 18 L72 66 L96 66 L76 102 L112 54 L90 54 Z" fill="#fde047" opacity="0.9"/>
+  </g>
+
+  <!-- Helmet silhouette -->
+  <g transform="translate(300,45)">
+    <path d="M30 55 a30 30 0 1 1 60 0 v10 h-10 v-10 a20 20 0 1 0 -40 0 v10 h-10 Z" fill="#1f2937" opacity="0.95"/>
+    <circle cx="78" cy="63" r="6" fill="#fff"/>
+  </g>
+
+  <!-- Brand text -->
+  <g transform="translate(360,95)">
+    <text x="0" y="0" font-family="Inter,Segoe UI,Roboto,Arial,sans-serif" font-weight="800" font-size="28" fill="#1f2937" letter-spacing="1.5">KWETU</text>
+    <text x="0" y="28" font-family="Inter,Segoe UI,Roboto,Arial,sans-serif" font-weight="800" font-size="28" fill="#ef4444" letter-spacing="1.5">DIRECT</text>
+  </g>
+</svg>

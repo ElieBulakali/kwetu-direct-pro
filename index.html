@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KWETU DIRECT — Livraison à domicile</title>
+  <meta name="description" content="KWETU DIRECT — Service de livraison à domicile rapide et fiable.">
+  <link rel="icon" href="./assets/logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#F5EEDF',
+            brandYellow: '#FDE047',
+            brandRed: '#EF4444',
+            brandInk: '#1F2937'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-[##F5EEDF] bg-[color:var(--beige)] text-brandInk selection:bg-brandYellow/60">
+  <style>
+    :root { --beige: #F5EEDF; }
+  </style>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[var(--beige)]/90 backdrop-blur border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="./assets/logo.svg" alt="KWETU DIRECT logo" class="h-10 w-auto">
+        <span class="font-extrabold tracking-wide text-xl group-hover:text-brandRed transition">KWETU DIRECT</span>
+      </a>
+      <nav class="hidden md:flex gap-6 font-medium">
+        <a href="#services" class="hover:text-brandRed">Services</a>
+        <a href="#zones" class="hover:text-brandRed">Zones</a>
+        <a href="#tarifs" class="hover:text-brandRed">Tarifs</a>
+        <a href="#contact" class="hover:text-brandRed">Contact</a>
+      </nav>
+      <button id="cta" class="ml-4 px-4 py-2 rounded-2xl bg-brandRed text-white font-semibold shadow hover:shadow-md transition">
+        Commander maintenant
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4 sm:px-6 lg:px-8 py-14">
+      <!-- Image left -->
+      <div class="order-1">
+        <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden bg-amber-50 ring-1 ring-amber-200 grid place-items-center">
+          <img src="./assets/courier-placeholder.svg" alt="Coursier effectuant une livraison" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <!-- Text right -->
+      <div class="order-2">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Livraison à domicile, rapide &amp; fiable.
+        </h1>
+        <p class="mt-4 text-lg text-gray-700">
+          Avec <strong>KWETU DIRECT</strong>, faites livrer vos repas, courses et colis partout en ville. 
+          Nous combinons <span class="text-brandRed font-semibold">vitesse</span>, 
+          <span class="text-yellow-700 font-semibold">sécurité</span> et <span class="font-semibold">simplicité</span>.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#tarifs" class="px-5 py-3 rounded-2xl bg-brandYellow font-semibold hover:brightness-95 ring-1 ring-yellow-200">Voir les tarifs</a>
+          <a href="#contact" class="px-5 py-3 rounded-2xl bg-brandRed text-white font-semibold hover:brightness-110">Devenir partenaire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold mb-8">Nos services</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Block 1 (image left) -->
+        <article class="grid md:grid-cols-2 gap-6 items-center rounded-2xl p-6 bg-yellow-50 ring-1 ring-yellow-200">
+          <div class="order-1">
+            <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-yellow-100 grid place-items-center">
+              <span class="text-gray-500">Espace image (remplacez-moi)</span>
+            </div>
+          </div>
+          <div class="order-2">
+            <h3 class="text-2xl font-bold">Livraison repas</h3>
+            <p class="mt-2 text-gray-700">Restaurants, fast-foods, snacks : on vient, on récupère, on livre à votre porte.</p>
+            <ul class="mt-3 list-disc pl-5 text-gray-700">
+              <li>Temps moyen &lt; 45 min</li>
+              <li>Suivi en temps réel</li>
+              <li>Emballage sécurisé</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Block 2 (image right) -->
+        <article class="grid md:grid-cols-2 gap-6 items-center rounded-2xl p-6 bg-red-50 ring-1 ring-red-200">
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-bold">Courses &amp; pharmacie</h3>
+            <p class="mt-2 text-gray-700">Faites vos courses sans bouger. On s'occupe des listes et des files d'attente.</p>
+            <ul class="mt-3 list-disc pl-5 text-gray-700">
+              <li>Achat à la demande</li>
+              <li>Conservation respectée</li>
+              <li>Livraison discrète</li>
+            </ul>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-red-100 grid place-items-center">
+              <span class="text-gray-500">Espace image (remplacez-moi)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Block 3 (image left) -->
+        <article class="grid md:grid-cols-2 gap-6 items-center rounded-2xl p-6 bg-amber-50 ring-1 ring-amber-200">
+          <div class="order-1">
+            <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-amber-100 grid place-items-center">
+              <span class="text-gray-500">Espace image (remplacez-moi)</span>
+            </div>
+          </div>
+          <div class="order-2">
+            <h3 class="text-2xl font-bold">Colis express</h3>
+            <p class="mt-2 text-gray-700">Docs, gadgets, cadeaux : on transporte vite et avec soin.</p>
+            <ul class="mt-3 list-disc pl-5 text-gray-700">
+              <li>Signature à réception</li>
+              <li>Preuves photo</li>
+              <li>Assurance disponible</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Block 4 (image right) -->
+        <article class="grid md:grid-cols-2 gap-6 items-center rounded-2xl p-6 bg-orange-50 ring-1 ring-orange-200">
+          <div class="order-2 md:order-1">
+            <h3 class="text-2xl font-bold">Corporate &amp; B2B</h3>
+            <p class="mt-2 text-gray-700">Abonnements entreprises, tournées planifiées, retours &amp; reverse-logistics.</p>
+            <ul class="mt-3 list-disc pl-5 text-gray-700">
+              <li>Tableau de bord</li>
+              <li>Facturation mensuelle</li>
+              <li>Support prioritaire</li>
+            </ul>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-orange-100 grid place-items-center">
+              <span class="text-gray-500">Espace image (remplacez-moi)</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zones -->
+  <section id="zones" class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-8 items-center rounded-2xl p-6 bg-emerald-50 ring-1 ring-emerald-200">
+        <div class="order-1">
+          <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-emerald-100 grid place-items-center">
+            <span class="text-gray-500">Carte / capture plan (remplacez-moi)</span>
+          </div>
+        </div>
+        <div class="order-2">
+          <h2 class="text-3xl font-extrabold">Zones desservies</h2>
+          <p class="mt-2 text-gray-700">Centre-ville, quartiers résidentiels et zones universitaires. Extension progressive selon la demande.</p>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <span class="px-3 py-2 rounded-xl bg-white ring-1 ring-emerald-100">Zone A</span>
+            <span class="px-3 py-2 rounded-xl bg-white ring-1 ring-emerald-100">Zone B</span>
+            <span class="px-3 py-2 rounded-xl bg-white ring-1 ring-emerald-100">Zone C</span>
+            <span class="px-3 py-2 rounded-xl bg-white ring-1 ring-emerald-100">Zone D</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarifs -->
+  <section id="tarifs" class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl p-6 bg-white ring-1 ring-gray-200">
+        <h2 class="text-3xl font-extrabold">Tarifs</h2>
+        <p class="mt-2 text-gray-700">Transparents et simples. Paiement à la livraison ou par mobile money.</p>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+          <div class="rounded-2xl p-6 bg-yellow-50 ring-1 ring-yellow-200">
+            <h3 class="font-bold text-xl">Local</h3>
+            <p class="text-sm text-gray-600">≤ 3 km</p>
+            <p class="mt-4 text-3xl font-extrabold">2.5$</p>
+          </div>
+          <div class="rounded-2xl p-6 bg-red-50 ring-1 ring-red-200">
+            <h3 class="font-bold text-xl">Urbain</h3>
+            <p class="text-sm text-gray-600">≤ 7 km</p>
+            <p class="mt-4 text-3xl font-extrabold">4$</p>
+          </div>
+          <div class="rounded-2xl p-6 bg-amber-50 ring-1 ring-amber-200">
+            <h3 class="font-bold text-xl">Étendu</h3>
+            <p class="text-sm text-gray-600">&gt; 7 km</p>
+            <p class="mt-4 text-3xl font-extrabold">6$+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center rounded-2xl p-6 bg-indigo-50 ring-1 ring-indigo-200">
+      <div class="order-2 md:order-1">
+        <h2 class="text-3xl font-extrabold">Prêt à livrer chez vous ?</h2>
+        <p class="mt-2 text-gray-700">Cliquez ci-dessous, entrez votre adresse et laissez-nous faire le reste.</p>
+        <div class="mt-4 flex gap-3">
+          <button id="orderNow" class="px-5 py-3 rounded-2xl bg-brandRed text-white font-semibold hover:brightness-110">Commander</button>
+          <a href="#contact" class="px-5 py-3 rounded-2xl bg-brandYellow font-semibold ring-1 ring-yellow-200">WhatsApp</a>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <div class="aspect-[4/3] rounded-xl bg-white/60 ring-1 ring-indigo-100 grid place-items-center">
+          <span class="text-gray-500">Espace image (remplacez-moi)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl p-6 bg-white ring-1 ring-gray-200">
+        <h2 class="text-3xl font-extrabold">Contact</h2>
+        <form id="contactForm" class="grid md:grid-cols-2 gap-6 mt-6">
+          <div class="grid gap-2">
+            <label class="font-medium" for="name">Nom complet</label>
+            <input id="name" type="text" class="px-4 py-3 rounded-xl ring-1 ring-gray-300 bg-white" placeholder="Votre nom">
+          </div>
+          <div class="grid gap-2">
+            <label class="font-medium" for="phone">Téléphone / WhatsApp</label>
+            <input id="phone" type="tel" class="px-4 py-3 rounded-xl ring-1 ring-gray-300 bg-white" placeholder="+243 ...">
+          </div>
+          <div class="grid gap-2 md:col-span-2">
+            <label class="font-medium" for="message">Message</label>
+            <textarea id="message" rows="4" class="px-4 py-3 rounded-xl ring-1 ring-gray-300 bg-white" placeholder="Je veux livrer depuis ... à ..."></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <button class="w-full md:w-auto px-6 py-3 rounded-2xl bg-brandRed text-white font-semibold hover:brightness-110">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-gray-600">
+    <p>© <span id="year"></span> KWETU DIRECT — Tous droits réservés.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

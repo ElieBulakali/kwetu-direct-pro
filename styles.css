@@ -1,0 +1,13 @@
+/* Styles additionnels (si nécessaire) */
+html, body {
+  scroll-behavior: smooth;
+}
+/* Corps beige général */
+body {
+  background-color: var(--beige);
+}
+/* Accessibilité: focus visibles */
+:focus-visible {
+  outline: 3px solid #FDE047;
+  outline-offset: 2px;
+}

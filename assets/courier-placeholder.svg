@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Placeholder - Courier Illustration</title>
+  <rect width="800" height="600" fill="#fff7ed"/>
+  <g transform="translate(100,200)">
+    <rect x="0" y="120" width="180" height="40" rx="8" fill="#ef4444"/>
+    <circle cx="30" cy="170" r="28" fill="#1f2937"/>
+    <circle cx="160" cy="170" r="28" fill="#1f2937"/>
+    <rect x="30" y="60" width="140" height="60" rx="10" fill="#f59e0b"/>
+    <path d="M70 0 a30 30 0 0 1 60 0 v40 h-60 Z" fill="#1f2937"/>
+    <rect x="80" y="-10" width="40" height="20" rx="4" fill="#fde047"/>
+  </g>
+  <text x="400" y="560" text-anchor="middle" font-family="Inter,Segoe UI,Roboto,Arial,sans-serif" font-size="20" fill="#6b7280">
+    Replace with your real image (800×600)
+  </text>
+</svg>
